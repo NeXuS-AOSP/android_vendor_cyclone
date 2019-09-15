@@ -69,6 +69,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
       ro.control_privapp_permissions=log
 
+# Fonts
+include vendor/cyclone/config/fonts.mk
+
 # Gapps
 ifeq ($(USE_GAPPS),true)
 $(call inherit-product, vendor/gapps/gapps.mk)
