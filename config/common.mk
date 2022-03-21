@@ -180,6 +180,9 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+PRODUCT_PACKAGES += \
+	Camera
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
