@@ -98,8 +98,9 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Bootanimation
 TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
-PRODUCT_PACKAGES += \
-    bootanimation.zip
+
+PRODUCT_COPY_FILES += \
+    vendor/lineage/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
 
 # Lineage packages
 PRODUCT_PACKAGES += \
