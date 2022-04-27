@@ -1,11 +1,11 @@
-# Inherit full common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full.mk)
+# Inherit full common Cyclone stuff
+$(call inherit-product, vendor/cyclone/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
-# Include Lineage LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
+# Include Cyclone LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/cyclone/overlay/dictionaries
 
-$(call inherit-product, vendor/lineage/config/telephony.mk)
+$(call inherit-product, vendor/cyclone/config/telephony.mk)
